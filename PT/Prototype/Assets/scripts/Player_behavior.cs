@@ -13,7 +13,10 @@ public class Player_behavior : MonoBehaviour
     Vector2 verMove = new Vector2(0f, 1f);
     public GameObject player;
     public float speed;
-    public float mod = 1;
+    public float horMod;
+    public float verMod;
+    public Animator animator;
+    public bool lined = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,8 +26,8 @@ public class Player_behavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        horDir = Input.GetAxisRaw("Horizontal") * mod;
-        verDir = Input.GetAxisRaw("Vertical") * mod;
+        horDir = Input.GetAxisRaw("Horizontal") * horMod;
+        verDir = Input.GetAxisRaw("Vertical") * verMod;
         Movement();
     }
 
@@ -37,6 +40,11 @@ public class Player_behavior : MonoBehaviour
         {
            float angle = Mathf.Atan2(moveDirection.y, moveDirection.x) * Mathf.Rad2Deg - 90; 
             transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+            animator.SetTrigger("Swimming");
         }
+    }
+
+    public void LineMe(){
+        lined = true;
     }
 }
