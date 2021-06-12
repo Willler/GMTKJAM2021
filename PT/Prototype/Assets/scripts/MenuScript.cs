@@ -29,6 +29,14 @@ public class MenuScript : MonoBehaviour
 
    public void nextSceneButton()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        StartCoroutine("nextSceneRoutine");
+        
+        
+    }
+
+    IEnumerator nextSceneRoutine()
+    {
+        yield return new WaitForSeconds(2f);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
