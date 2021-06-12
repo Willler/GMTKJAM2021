@@ -16,8 +16,16 @@ public class Player_behavior : MonoBehaviour
     public float horMod;
     public float verMod;
     public Animator animator;
-    public bool lined = false;
-    // Start is called before the first frame update
+    public GameObject currentNode;
+    bool drawing = false;
+    GameObject previousNode;
+    LineRenderer lr;
+    bool drawn = false;
+
+    private void Awake() {
+     lr = GetComponent<LineRenderer>();   
+    }
+
     void Start()
     {
         _origPos = transform.position;
@@ -29,6 +37,7 @@ public class Player_behavior : MonoBehaviour
         horDir = Input.GetAxisRaw("Horizontal") * horMod;
         verDir = Input.GetAxisRaw("Vertical") * verMod;
         Movement();
+        LineManagement();
     }
 
     void Movement()
@@ -44,7 +53,29 @@ public class Player_behavior : MonoBehaviour
         }
     }
 
-    public void LineMe(){
-        lined = true;
+    void LineManagement(){
+        if(drawing){
+            lr.SetPosition(0, currentNode.GetComponent<Rigidbody2D>().position);
+            lr.SetPosition(1, player.GetComponent<Rigidbody2D>().position);
+        }
+        else if(drawn){
+            lr.SetPosition(0, previousNode.GetComponent<Rigidbody2D>().position);
+            lr.SetPosition(1, currentNode.GetComponent<Rigidbody2D>().position);
+        }
     }
-}
+
+    public void NodeContact(GameObject contactedNode){
+        if(!drawing){
+            drawing = true;
+            currentNode = contactedNode;
+        }
+        else if (drawing){
+            previousNode = currentNode;
+            currentNode = contactedNode;
+            drawing = false;
+            drawn = true;
+        }
+    }
+
+}    
+
