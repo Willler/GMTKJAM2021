@@ -25,6 +25,9 @@ public class Background_color : MonoBehaviour
         if(R==B){
 
         }
+        else if(R== 53 && G == 20 && B == 27 ){
+            
+        }
     }
 
 }
