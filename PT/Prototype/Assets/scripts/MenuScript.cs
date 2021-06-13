@@ -9,15 +9,16 @@ public class MenuScript : MonoBehaviour
     // Start is called before the first frame update
 
     public Text startMenuText;
+    public AudioSource highlight;
 
     void Start()
     {
-        
+        highlight = GetComponent<AudioSource>();
     }
 
     public void onPointerEnter()
     {
-
+        highlight.Play();
     }
 
     // Update is called once per frame
@@ -38,5 +39,10 @@ public class MenuScript : MonoBehaviour
     {
         yield return new WaitForSeconds(2f);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    public void playSFX()
+    {
+        
     }
 }

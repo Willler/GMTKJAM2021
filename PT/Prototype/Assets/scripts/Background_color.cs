@@ -26,13 +26,16 @@ public class Background_color : MonoBehaviour
     }
 
     private void Update() {
-        if (Mathf.Approximately(R,B))
+        
+        if (Mathf.Approximately(R, B))
         {
             TransitionFlow.SetActive(true);
         }
-        else if(Mathf.Approximately(R,0.53f) && Mathf.Approximately(G,0.2f) && Mathf.Approximately(B,0.27f) ){
-            TransitionFlow.SetActive(true);
+        else if (Mathf.Approximately(R, 0.53f) && Mathf.Approximately(G, 0.2f) && Mathf.Approximately(B, 0.27f))
+        {
+            
             Debug.Log("Transitioning");
+            TransitionFlow.SetActive(true);
         }
     }
 
