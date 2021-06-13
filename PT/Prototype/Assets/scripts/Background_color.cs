@@ -21,4 +21,10 @@ public class Background_color : MonoBehaviour
         gameObject.GetComponent<SpriteRenderer>().color=new Color(R, G, B, 1);
     }
 
+    private void Update() {
+        if(R==B){
+
+        }
+    }
+
 }
