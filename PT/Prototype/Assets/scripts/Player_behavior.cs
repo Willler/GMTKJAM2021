@@ -32,8 +32,9 @@ public class Player_behavior : MonoBehaviour
     public GameObject rope6;
     public GameObject leftBG;
     public GameObject rightBG;
-    public float colorModifier = .25f;
+    public float redColorMod;
     public float greenColorMod;
+    public float blueColorMod;
     bool colorChangerActive = false;
 
 
@@ -123,9 +124,9 @@ public class Player_behavior : MonoBehaviour
     }
     void ColorChangeBG(){
         if(colorChangerActive){
-            float R = colorModifier;
+            float R = redColorMod;
             float G = greenColorMod;
-            float B = -colorModifier;
+            float B = blueColorMod;;
             leftBG.GetComponent<Background_color>().ColorChange(R,G,B);
             rightBG.GetComponent<Background_color>().ColorChange(B,-G,R);
             colorChangerActive = false;

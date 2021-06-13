@@ -585,6 +585,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1027758888}
     - target: {fileID: 812847872663275189, guid: 8888b960774115e4ba637d96606663ee, type: 3}
+      propertyPath: redColorMod
+      value: 0.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 812847872663275189, guid: 8888b960774115e4ba637d96606663ee, type: 3}
+      propertyPath: blueColorMod
+      value: -0.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 812847872663275189, guid: 8888b960774115e4ba637d96606663ee, type: 3}
       propertyPath: colorModifier
       value: 0.12
       objectReference: {fileID: 0}
