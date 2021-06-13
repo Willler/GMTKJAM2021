@@ -37,6 +37,9 @@ public class Player_behavior : MonoBehaviour
     public float blueColorMod;
     bool colorChangerActive = false;
 
+    public AudioClip impact;
+    AudioSource audioSource;
+
 
 
     private void Awake() {
@@ -48,6 +51,8 @@ public class Player_behavior : MonoBehaviour
     {
         _origPos = transform.position;
         gameObject.GetComponent<SpriteRenderer>().color=new Color(R, G, B, 1);
+
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -88,14 +93,17 @@ public class Player_behavior : MonoBehaviour
         if(otherPlayer.GetComponent<Player2_behavior>().topped){
             if(otherPlayer.GetComponent<Player2_behavior>().currentNode.GetComponent<Node_Behavior>().iden == currentNode.GetComponent<Node_Behavior>().iden){
                 topped = true;
+                
                 otherNode = otherPlayer.GetComponent<Player2_behavior>().currentNode;
                 if(currentNode.GetComponent<Node_Behavior>().iden == 1){
                     rope1.SetActive(true);
+                    
                     colorChangerActive = true;
                     ColorChangeBG();
                 }
                 if(currentNode.GetComponent<Node_Behavior>().iden == 2){
                     rope2.SetActive(true);
+                    
                     colorChangerActive = true;
                     ColorChangeBG();
                 }
@@ -119,6 +127,7 @@ public class Player_behavior : MonoBehaviour
                     colorChangerActive = true;
                     ColorChangeBG();
                 }
+                
             }
         }
     }
