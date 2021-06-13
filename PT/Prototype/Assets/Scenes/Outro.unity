@@ -2288,6 +2288,8 @@ GameObject:
   - component: {fileID: 2133033126}
   - component: {fileID: 2133033128}
   - component: {fileID: 2133033129}
+  - component: {fileID: 2133033131}
+  - component: {fileID: 2133033130}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -2581,6 +2583,7 @@ MonoBehaviour:
   - {fileID: 2133033129}
   - {fileID: 2133033121}
   - {fileID: 2133033115}
+  - {fileID: 2133033131}
   - {fileID: 2133033116}
   - {fileID: 2133033117}
   - {fileID: 2133033112}
@@ -2591,6 +2594,7 @@ MonoBehaviour:
   - {fileID: 2133033120}
   - {fileID: 2133033128}
   - {fileID: 2133033127}
+  - {fileID: 2133033130}
   - {fileID: 2133033126}
   suppressAllAutoSelections: 0
 --- !u!114 &2133033124
@@ -2620,7 +2624,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 2133033123}
   selectedCommands:
-  - {fileID: 2133033129}
+  - {fileID: 2133033130}
   variables: []
   description: 
   stepPause: 0
@@ -2714,7 +2718,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &2133033129
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2732,3 +2736,35 @@ MonoBehaviour:
   fadeColor: {r: 0, g: 0, b: 0, a: 1}
   fadeTexture: {fileID: 0}
   fadeTweenType: 4
+--- !u!114 &2133033130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2133033111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b359b09a7ba2e4af981f07c07f8af85a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 16
+  indentLevel: 0
+--- !u!114 &2133033131
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2133033111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 15
+  indentLevel: 0
+  musicClip: {fileID: 8300000, guid: 7b8ed9c7848051240a51036e196a8da3, type: 3}
+  atTime: 0
+  loop: 1
+  fadeDuration: 1
