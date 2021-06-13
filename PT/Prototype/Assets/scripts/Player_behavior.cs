@@ -24,11 +24,12 @@ public class Player_behavior : MonoBehaviour
     public int R;
     public int G;
     public int B;
-    public GameObject rope2;
     public GameObject rope1;
+    public GameObject rope2;
     public GameObject rope3;
     public GameObject rope4;
     public GameObject rope5;
+    public GameObject rope6;
     public GameObject leftBG;
     public GameObject rightBG;
     public float colorModifier = .25f;
@@ -87,13 +88,33 @@ public class Player_behavior : MonoBehaviour
             if(otherPlayer.GetComponent<Player2_behavior>().currentNode.GetComponent<Node_Behavior>().iden == currentNode.GetComponent<Node_Behavior>().iden){
                 topped = true;
                 otherNode = otherPlayer.GetComponent<Player2_behavior>().currentNode;
+                if(currentNode.GetComponent<Node_Behavior>().iden == 1){
+                    rope1.SetActive(true);
+                    colorChangerActive = true;
+                    ColorChangeBG();
+                }
                 if(currentNode.GetComponent<Node_Behavior>().iden == 2){
                     rope2.SetActive(true);
                     colorChangerActive = true;
                     ColorChangeBG();
                 }
-                if(currentNode.GetComponent<Node_Behavior>().iden == 1){
-                    rope1.SetActive(true);
+                if(currentNode.GetComponent<Node_Behavior>().iden == 3){
+                    rope3.SetActive(true);
+                    colorChangerActive = true;
+                    ColorChangeBG();
+                }
+                if(currentNode.GetComponent<Node_Behavior>().iden == 4){
+                    rope4.SetActive(true);
+                    colorChangerActive = true;
+                    ColorChangeBG();
+                }
+                if(currentNode.GetComponent<Node_Behavior>().iden == 5){
+                    rope5.SetActive(true);
+                    colorChangerActive = true;
+                    ColorChangeBG();
+                }
+                if(currentNode.GetComponent<Node_Behavior>().iden == 6){
+                    rope6.SetActive(true);
                     colorChangerActive = true;
                     ColorChangeBG();
                 }
