@@ -529,6 +529,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 420710911382770737, guid: 7ffda1f3513e22740b39dbced7be23dc, type: 3}
+      propertyPath: B
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 420710911382770737, guid: 7ffda1f3513e22740b39dbced7be23dc, type: 3}
+      propertyPath: G
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 420710911729759577, guid: 7ffda1f3513e22740b39dbced7be23dc, type: 3}
+      propertyPath: B
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 420710911729759577, guid: 7ffda1f3513e22740b39dbced7be23dc, type: 3}
+      propertyPath: G
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 420710911827398622, guid: 7ffda1f3513e22740b39dbced7be23dc, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -615,7 +631,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
