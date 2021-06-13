@@ -22,17 +22,17 @@ public class Background_color : MonoBehaviour
         G += Green;
         B += Blue;
         gameObject.GetComponent<SpriteRenderer>().color=new Color(R, G, B, 1);
+
     }
 
     private void Update() {
-        
-        if (R == B || R == G)
+        if (Mathf.Approximately(R,B))
         {
-            Debug.Log("Transitioning");
             TransitionFlow.SetActive(true);
         }
-        else if(R== 53 && G == 20 && B == 27 ){
-            //TransitionFlow.SetActive(true);
+        else if(Mathf.Approximately(R,0.53f) && Mathf.Approximately(G,0.2f) && Mathf.Approximately(B,0.27f) ){
+            TransitionFlow.SetActive(true);
+            Debug.Log("Transitioning");
         }
     }
 
