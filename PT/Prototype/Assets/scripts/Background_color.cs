@@ -25,11 +25,14 @@ public class Background_color : MonoBehaviour
     }
 
     private void Update() {
-        if(R==B){
+        
+        if (R == B || R == G)
+        {
+            Debug.Log("Transitioning");
             TransitionFlow.SetActive(true);
         }
         else if(R== 53 && G == 20 && B == 27 ){
-            
+            //TransitionFlow.SetActive(true);
         }
     }
 
