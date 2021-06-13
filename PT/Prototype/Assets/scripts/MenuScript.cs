@@ -41,8 +41,9 @@ public class MenuScript : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
-    public void playSFX()
+    public void endGame()
     {
-        
+        Debug.Log("ending");
+        Application.Quit(); 
     }
 }
