@@ -5751,6 +5751,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5278628027389453586, guid: 1612d50a04537fc459e14c875c060210, type: 3}
+      propertyPath: rope
+      value: 
+      objectReference: {fileID: 553967547}
     - target: {fileID: 5278628027389453587, guid: 1612d50a04537fc459e14c875c060210, type: 3}
       propertyPath: m_Name
       value: Node 2B
@@ -6279,7 +6283,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5949614356287331835, guid: 56e283a7a416f3a4ab0ad831e377acae, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5949614356287331835, guid: 56e283a7a416f3a4ab0ad831e377acae, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6289,6 +6293,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Node 1B
       objectReference: {fileID: 0}
+    - target: {fileID: 5949614356287331839, guid: 56e283a7a416f3a4ab0ad831e377acae, type: 3}
+      propertyPath: rope
+      value: 
+      objectReference: {fileID: 883289248}
     - target: {fileID: 9121312607500846276, guid: 56e283a7a416f3a4ab0ad831e377acae, type: 3}
       propertyPath: m_Name
       value: Node 1B
@@ -7162,7 +7170,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 812847872663275186, guid: 8888b960774115e4ba637d96606663ee, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 812847872663275186, guid: 8888b960774115e4ba637d96606663ee, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7346,6 +7354,10 @@ PrefabInstance:
       propertyPath: rope
       value: 
       objectReference: {fileID: 553967547}
+    - target: {fileID: 5278628027389453586, guid: 1612d50a04537fc459e14c875c060210, type: 3}
+      propertyPath: rope
+      value: 
+      objectReference: {fileID: 553967547}
     - target: {fileID: 5278628027389453598, guid: 1612d50a04537fc459e14c875c060210, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -7416,6 +7428,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5949614356287331839, guid: 56e283a7a416f3a4ab0ad831e377acae, type: 3}
+      propertyPath: rope
+      value: 
+      objectReference: {fileID: 883289248}
     - target: {fileID: 9121312607500846276, guid: 56e283a7a416f3a4ab0ad831e377acae, type: 3}
       propertyPath: m_Name
       value: Node 1A
