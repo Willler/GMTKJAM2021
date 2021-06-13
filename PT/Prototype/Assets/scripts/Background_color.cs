@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Fungus;
 
 public class Background_color : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class Background_color : MonoBehaviour
     public float R;
     public float G;
     public float B;
+
+    public GameObject TransitionFlow;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +26,7 @@ public class Background_color : MonoBehaviour
 
     private void Update() {
         if(R==B){
-
+            TransitionFlow.SetActive(true);
         }
         else if(R== 53 && G == 20 && B == 27 ){
             
