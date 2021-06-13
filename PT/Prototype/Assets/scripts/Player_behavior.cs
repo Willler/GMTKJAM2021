@@ -21,9 +21,9 @@ public class Player_behavior : MonoBehaviour
     public bool topped; 
     bool drawn1;
     bool drawn2;
-    public int R;
-    public int G;
-    public int B;
+    public float R;
+    public float G;
+    public float B;
     public GameObject rope1;
     public GameObject rope2;
     public GameObject rope3;

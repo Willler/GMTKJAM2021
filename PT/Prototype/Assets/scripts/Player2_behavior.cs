@@ -15,9 +15,9 @@ public class Player2_behavior : MonoBehaviour
     public Animator animator;
     public GameObject currentNode;
     public bool topped;
-    public int R;
-    public int G;
-    public int B;
+    public float R;
+    public float G;
+    public float B;
 
     void Start()
     {
